@@ -1,0 +1,190 @@
+body{
+    background-color: #f4ff81;
+}
+.outerbox{
+    display: inline-block;
+    position: relative;
+    left: 21%;
+    top: 10vh;
+    width: 50%;
+    min-height: 70vh;
+}
+.addbtnb, .rembtnb{
+    font-weight:bold;
+    display: inline-block;
+    width:20%;
+    float: left;
+    background: white;
+    color: #00b8d4;
+    border-color: #00e5ff;
+    border-width: 2px;
+    height: 50px;
+    font-size: 110%;
+    margin: 1%;
+}
+.rembtnb{
+    width: 25%;
+    margin-left: 52%;
+}
+.addbtna, .rembtna{
+    display: none;
+}
+#addbtnb:hover, #rembtnb:hover{
+    background-color: #18ffff ;
+    color: white;
+    transition: 0.5s;
+}
+.entryb{
+    display: none;
+    width: 70%;
+    float: left;
+}
+.entrya{
+    padding-left: 2% !important;
+    background-color: white !important;
+    display: inline-block;
+    width:68% !important;
+    animation-name: entry-box;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    border: 1px solid !important;
+}
+.addeleb{
+    display: none;
+}
+
+.addelea:hover{
+    background-color: #18ffff ;
+    color: white;
+    transition: 0.5s;
+}
+
+.addelea{
+    animation-name: entry-box;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    font-weight:bold;
+    display: inline-block;
+    width:20%;
+    float: right;
+    background: white;
+    color: #00b8d4;
+    border-color: #00e5ff;
+    border-width: 2px;
+    height: 49px;
+    font-size: 110%;
+}
+@keyframes entry-box {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+.inputbox{
+    height: 70px;
+    padding: 1%;
+}
+.ele-ments{
+    font-size: 200%;
+    animation-name: li-entry;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.already{
+    font-size: 200%;
+}
+
+@keyframes li-entry {
+    0%{
+        font-size: 450%;
+    }
+    100%{
+        font-size: 200%;
+    }
+}
+
+li{
+    font-family: 'Bellefair', serif;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.list{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#addTo{
+    max-height: 100vh;
+}
+
+.complete{
+    color: green;
+    display: inline-block;
+    position: absolute;
+    left: 74%;
+    top: 45vh;
+    font-size: 290%;
+    font-family: 'Montserrat', sans-serif;
+}
+.total{
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    display: inline-block;
+    position: absolute;
+    left: 2%;
+    top: 45vh;
+    font-size: 290%;
+}
+span{
+    font-weight: bolder;
+    color: blue;
+}
+
+@media screen and (max-width: 1120px){
+    .outerbox{
+        min-width: 90%;
+        position: relative;
+        left: 5%;
+        top: 20vh;
+    }
+    .total{
+        top: 5vh;
+        left: 20%;
+    }
+    .complete{
+        top: 5vh;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .outerbox{
+        top: 30vh;
+    }
+    .total{
+        left: 30%;
+    }
+    .complete{
+        top: 15vh;
+        left: 30%;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .total {
+        left: 10%;
+    }
+
+    .complete {
+        left: 10%;
+    }
+}
